@@ -26,6 +26,18 @@ public class UserFeature {
 	@JsonIgnore
 	private Feature feature;
 
+	@Column(name = "canAccess")
+	private boolean canAccess;
+
+	public UserFeature() {
+		super();
+	}
+
+	public UserFeature(Feature feature, boolean canAccess) {
+		this.feature = feature;
+		this.canAccess = canAccess;
+	}
+
 	public UserFeature(boolean canAccess) {
 		super();
 		this.canAccess = canAccess;
@@ -53,18 +65,6 @@ public class UserFeature {
 
 	public void setCanAccess(boolean canAccess) {
 		this.canAccess = canAccess;
-	}
-
-	@Column(name = "canAccess")
-	private boolean canAccess;
-
-	public UserFeature(Feature feature, boolean canAccess) {
-		this.feature = feature;
-		this.canAccess = canAccess;
-	}
-
-	public UserFeature() {
-		super();
 	}
 
 }
