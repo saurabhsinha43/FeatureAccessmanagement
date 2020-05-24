@@ -25,6 +25,13 @@ public class User {
 		super();
 	}
 
+	public User(String email, UserFeature... userFeature) {
+		this.email = email;
+		for (UserFeature UserFeature : userFeature)
+			UserFeature.setUser(this);
+		this.userFeature = Stream.of(userFeature).collect(Collectors.toSet());
+	}
+
 	public String getEmail() {
 		return email;
 	}
@@ -39,13 +46,6 @@ public class User {
 
 	public void setUserFeature(Set<UserFeature> userFeature) {
 		this.userFeature = userFeature;
-	}
-
-	public User(String email, UserFeature... userFeature) {
-		this.email = email;
-		for (UserFeature UserFeature : userFeature)
-			UserFeature.setUser(this);
-		this.userFeature = Stream.of(userFeature).collect(Collectors.toSet());
 	}
 
 }
