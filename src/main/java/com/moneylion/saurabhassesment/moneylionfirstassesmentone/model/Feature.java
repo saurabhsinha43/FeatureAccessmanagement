@@ -17,12 +17,16 @@ public class Feature {
 	@Column(name = "featurename")
 	private String featureName;
 
+	@OneToMany(mappedBy = "feature", cascade = CascadeType.ALL)
+	private Set<UserFeature> userFeature = new HashSet<>();
+
 	public Feature() {
 		super();
 	}
 
-	@OneToMany(mappedBy = "feature", cascade = CascadeType.ALL)
-	private Set<UserFeature> userFeature = new HashSet<>();
+	public Feature(String featureName) {
+		this.featureName = featureName;
+	}
 
 	public String getFeatureName() {
 		return featureName;
@@ -40,7 +44,4 @@ public class Feature {
 		this.userFeature = userFeature;
 	}
 
-	public Feature(String featureName) {
-		this.featureName = featureName;
-	}
 }
