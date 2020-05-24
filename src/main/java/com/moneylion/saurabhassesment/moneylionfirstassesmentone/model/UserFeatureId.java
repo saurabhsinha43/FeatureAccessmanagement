@@ -19,6 +19,12 @@ public class UserFeatureId implements Serializable {
 		super();
 	}
 
+	public UserFeatureId(String email, String featureName) {
+		super();
+		this.email = email;
+		this.featureName = featureName;
+	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -68,12 +74,6 @@ public class UserFeatureId implements Serializable {
 
 	public static long getSerialversionuid() {
 		return serialVersionUID;
-	}
-
-	public UserFeatureId(String email, String featureName) {
-		super();
-		this.email = email;
-		this.featureName = featureName;
 	}
 
 }
