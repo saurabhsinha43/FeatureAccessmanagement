@@ -1,0 +1,10 @@
+com\moneylion\saurabhassesment\moneylionfirstassesmentone\repository\UserRepository.class
+com\moneylion\saurabhassesment\moneylionfirstassesmentone\repository\UserFeatureRepository.class
+com\moneylion\saurabhassesment\moneylionfirstassesmentone\MoneyLionFirstAssesmentoneApplication.class
+com\moneylion\saurabhassesment\moneylionfirstassesmentone\controller\PostController.class
+com\moneylion\saurabhassesment\moneylionfirstassesmentone\model\UserFeature.class
+com\moneylion\saurabhassesment\moneylionfirstassesmentone\model\UserFeatureId.class
+com\moneylion\saurabhassesment\moneylionfirstassesmentone\model\Feature.class
+com\moneylion\saurabhassesment\moneylionfirstassesmentone\repository\FeatureRepository.class
+com\moneylion\saurabhassesment\moneylionfirstassesmentone\model\DataModel.class
+com\moneylion\saurabhassesment\moneylionfirstassesmentone\model\User.class
